@@ -5,7 +5,8 @@
     --Charcoal-Grey: hsl(235, 18%, 26%);
     --Grey: hsl(231, 7%, 60%);
     --White: hsl(0, 0%, 100%);
-    --Tomato: hsl(4, 100%, 67%); 
+    --Tomato: #ff6257; 
+    --Pinck: #E05381;
 }
 
 *{
@@ -27,7 +28,7 @@ body{
     right: 0;
     margin: 0 auto;
     transform: translate(0, -50%);
-    max-width: 800px;
+    width: 800px;
     background-color: var(--White);
     height: 550px;
     border-radius: 25px;
@@ -106,6 +107,7 @@ input{
     border-radius: 10px;
     padding: 15px;
     color: var(--Grey);
+    cursor: pointer;
 }
 
 button{
@@ -113,6 +115,11 @@ button{
     color: var(--White);
     border-radius: 10px;
     border: none;
+}
+
+button:hover{
+    background-image: linear-gradient(to right, #e05381, #ea5478, #fa5c63, #ff6257);
+    cursor: pointer;
 }
 
 #illustration{
