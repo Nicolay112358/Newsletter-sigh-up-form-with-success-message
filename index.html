@@ -19,9 +19,12 @@
                 </ul>
             </div>
             <form action="">
-                <legend>Email address</legend>
-                <input type="email">
-                <button>Subscribe to monthly newsletter</button>
+                <div class="label-box">
+                    <label for="email">Email address</label>
+                    <label for="email" id="invalid-massage" >Valid email required</label>
+                </div>
+                    <input type="email" id="email" name="email" required>
+                    <button>Subscribe to monthly newsletter</button>
             </form>   
         </div>
         <div id="illustration">
