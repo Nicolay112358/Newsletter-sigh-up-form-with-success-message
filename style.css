@@ -95,17 +95,14 @@ label{
     font-size: 0.6rem;
     color: var(--Dark-Slate-Grey);
     font-weight: 700;
-}
-
-.label-box{
     display: flex;
     justify-content: space-between;
     align-items: stretch;
 }
 
 #invalid-massage{
-    display: none; 
     color: red;
+    display: none;
 }
 
 input, button{
