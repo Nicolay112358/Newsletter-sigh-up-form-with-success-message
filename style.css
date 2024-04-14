@@ -21,6 +21,7 @@ body{
     height: 100%;
 }
 
+/* request to update */
 .container {
     position: absolute;
     top: 50%;
@@ -114,14 +115,6 @@ input{
     padding: 15px;
     color: var(--Grey);
     cursor: pointer;
-}
-
-input:invalid:required {
-    border: 1px solid red;
-    border-radius: 10px;
-}
-
-input:valid{
     border: 1px solid var(--Grey);
     border-radius: 10px;
 }
@@ -149,3 +142,6 @@ button:hover{
     width: 380px;
     border-radius: 15px;
 }
+
+/*notification fo confirmation email*/
+
