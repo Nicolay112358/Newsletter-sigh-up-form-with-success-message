@@ -22,7 +22,7 @@ body{
 }
 
 /* request to update */
-.container {
+.container, .confirmation-email {
     position: absolute;
     top: 50%;
     left: 0;
@@ -145,3 +145,20 @@ button:hover{
 
 /*notification fo confirmation email*/
 
+.confirmation-email {
+    width: 430px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.icon-success {
+    background-image: url("images/icon-success.svg");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
