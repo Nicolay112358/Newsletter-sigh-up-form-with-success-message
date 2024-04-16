@@ -162,3 +162,7 @@ button:hover{
     height: 50px;
     width: 50px;
 }
+#user-email {
+    color: var(--Dark-Slate-Grey);
+    font-weight: bold;
+}

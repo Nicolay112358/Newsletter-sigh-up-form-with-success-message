@@ -3,6 +3,7 @@ const button = document.getElementById("button");
 const invalidMassage = document.getElementById("invalid-massage");
 const container = document.querySelector(".container");
 const body = document.querySelector("body");
+const dismissMessageButton = document.getElementById("dismiss-message");
 
 
 button.addEventListener("click", () => {
@@ -23,17 +24,25 @@ function validateInput() {
 }
 
 function displayConfirmationEmail() {
-    const confirmationEmail = `<div class="confirmation-email">
-                                        <div class="icon-success"></div>
-                                        <h1>Thanks for subscription</h1>
-                                        <p>
-                                            A confirmation email has benn sent to <span id="user-email">${inputEmail.value}</span>.
-                                            Please open it and click the button inside to confirm your 
-                                            subscription. 
-                                        </p>
-                                        <button>Dismiss message</button>
-                              f</div>`;
-    body.innerHTML = confirmationEmail; 
+    const confirmMessag = `
+        <div class="confirmation-email">
+            <div class="icon-success"></div>
+            <h1>Thanks for subscription</h1>
+            <p>
+                A confirmation email has benn sent to <span id="user-email">${inputEmail.value}</span>.
+                Please open it and click the button inside to confirm your 
+                subscription. 
+            </p>
+            <button id="dismiss-message" onclick="displayNewslette()">Dismiss message</button>
+        </div>
+    `; 
+    body.innerHTML = confirmMessag; 
 } 
                                 
+function displayNewslette(){
+    const confirmMessag = document.querySelector(".confirmation-email");
+    confirmMessag.remove(); 
+    body.appendChild(container);
+    inputEmail.value = "";
+}
 // hhhh@jjjjj.com
