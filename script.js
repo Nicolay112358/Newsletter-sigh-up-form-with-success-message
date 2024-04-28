@@ -4,15 +4,14 @@ const invalidMassage = document.getElementById("invalid-massage");
 const container = document.querySelector(".container");
 const body = document.querySelector("body");
 const dismissMessageButton = document.getElementById("dismiss-message");
-
+const regexpEmail = /[a-z0-9]+(@)+[a-z0-9]+\.+\w/ig;
 
 button.addEventListener("click", () => {
     validateInput();
 });
 
 function validateInput() {
-    if (inputEmail.validity.typeMismatch === true || inputEmail.value === ""){
-        inputEmail.setCustomValidity("Valid email required");
+    if (!regexpEmail.test(inputEmail.value) || inputEmail.value === ""){
         invalidMassage.style.display = "inline";
         inputEmail.style.border = "1px solid red";
     } else {
@@ -42,7 +41,7 @@ function displayConfirmationEmail() {
 function displayNewslette(){
     const confirmMessag = document.querySelector(".confirmation-email");
     confirmMessag.remove(); 
+    invalidMassage.style.display = "none";
     body.appendChild(container);
     inputEmail.value = "";
 }
-// hhhh@jjjjj.com
