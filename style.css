@@ -145,6 +145,30 @@ button:hover{
     border-radius: 15px;
 }
 
+/*notification fo confirmation email*/
+
+.confirmation-email {
+    width: 430px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.icon-success {
+    background-image: url("images/icon-success.svg");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+#user-email {
+    color: var(--Dark-Slate-Grey);
+    font-weight: bold;
+}
+
 @media (max-width: 375px) {
     
     body{
@@ -175,28 +199,16 @@ button:hover{
         justify-content: center;
         width: 100%;
     }
-}
 
-/*notification fo confirmation email*/
+    .confirmation-email {
+        width: 375px;
+        height: 100%;
+        padding-top: 35%;
+        padding-left: 25px;
+    }
 
-.confirmation-email {
-    width: 430px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-top: 40px;
-}
-
-.icon-success {
-    background-image: url("images/icon-success.svg");
-    background-size: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 50px;
-    width: 50px;
-}
-#user-email {
-    color: var(--Dark-Slate-Grey);
-    font-weight: bold;
+    #dismiss-message{
+        position: absolute;
+        bottom: 15px;
+    }
 }

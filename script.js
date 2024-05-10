@@ -4,7 +4,7 @@ const invalidMassage = document.getElementById("invalid-massage");
 const container = document.querySelector(".container");
 const body = document.querySelector("body");
 const dismissMessageButton = document.getElementById("dismiss-message");
-const regexpEmail = /[a-z0-9]+(@)+[a-z0-9]+\.+\w/ig;
+const regexpEmail = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
 
 button.addEventListener("click", () => {
     validateInput();
